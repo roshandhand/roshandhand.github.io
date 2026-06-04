@@ -7,69 +7,72 @@
 
 <body>
 
-  <div class="container">
+  <button class="menu-button" id="menuButton">☰</button>
 
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Health • Data • Policy • Technology</p>
+  <nav class="side-menu" id="sideMenu">
+    <a href="#latest">Latest</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#updates">Updates</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-        <h1>Roshan Dhand</h1>
+  <main class="page" id="latest">
 
-        <p class="hero-description">
-          Emory University student and Robert W. Woodruff Scholar studying Human Health and Economics on the pre-med track. I am interested in medicine, public health, policy, and using data to understand healthcare outcomes at scale.
-        </p>
+    <section class="intro">
+      <h1>Hi, my name is Roshan.</h1>
+      <img src="./profile.jpeg" alt="Roshan Dhand" class="profile-pic">
+    </section>
 
-        <div class="hero-buttons">
-          <a href="#research" class="button primary-button">View Research</a>
-          <a href="#projects" class="button secondary-button">View Projects</a>
-        </div>
+    <section class="recent">
+      <h2>Recent</h2>
+
+      <div class="recent-panel">
+        <h3>Building My Personal Website</h3>
+        <p>Learning HTML, CSS, Git, GitHub Pages, and web design while creating a public home for my research, projects, and writing.</p>
       </div>
 
-      <div class="hero-image">
-        <img src="./profile.jpeg" alt="Roshan Dhand" class="profile-pic">
+      <div class="recent-panel">
+        <h3>Public Health & Mortality Research</h3>
+        <p>Continuing work on COVID-19-associated drug, alcohol, and firearm mortality trends, social determinants of health, and organ transplantation.</p>
+      </div>
+
+      <div class="recent-panel">
+        <h3>Healthcare, Policy, and Data</h3>
+        <p>Exploring how healthcare systems, data analysis, economics, and policy can be used to better understand outcomes at scale.</p>
       </div>
     </section>
 
-    <section class="card" id="research">
+    <section class="section" id="research">
       <h2>Research</h2>
-      <p>
-        At Westchester Medical Center and New York Medical College, I conduct clinical and population health research focused on COVID-19-associated mortality trends, substance abuse, firearm injuries, organ transplantation, and social determinants of health.
-      </p>
-
-      <ul>
-        <li>Analyzed CDC WONDER mortality data, county-level risk indexes, and social vulnerability measures.</li>
-        <li>Used RStudio and SAS to study relationships between mortality outcomes and community-level risk factors.</li>
-        <li>Presented research on drug, alcohol, and firearm mortality trends at IDWeek 2025.</li>
-      </ul>
+      <p>Clinical and population health research focused on mortality trends, transplantation, public health, and social determinants of health.</p>
     </section>
 
-    <section class="card" id="projects">
-      <h2>Projects & Leadership</h2>
-
-      <ul>
-        <li><strong>Next Step Tutors:</strong> Founded a tutoring nonprofit supporting local students and exonerees through education, mentorship, and fundraising.</li>
-        <li><strong>Healthcare Consulting:</strong> Worked on clinic-facing projects focused on patient engagement, appointment adherence, and operational improvement.</li>
-        <li><strong>Impact Investing:</strong> Researched underwriting, repayment risk, and due diligence practices for student-run microfinance and impact investing funds.</li>
-        <li><strong>TEDx Leadership:</strong> Helped organize speaker events centered on ideas, storytelling, and public engagement.</li>
-      </ul>
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <p>Next Step Tutors, TEDx leadership, healthcare consulting, impact investing research, and this website.</p>
     </section>
 
-    <section class="card">
-      <h2>About Me</h2>
-
-      <p>
-        I am drawn to problems where individual lives connect to larger systems: healthcare access, public health policy, data, economics, and community-based impact. Long term, I hope to pursue an MD-MPH and work at the intersection of healthcare innovation, public health leadership, and equitable access to care.
-      </p>
+    <section class="section" id="updates">
+      <h2>Updates</h2>
+      <p>Updates coming soon.</p>
     </section>
 
-    <section class="card" id="contact">
-      <h2>Contact</h2>
-      <p>Email: roshandhand@gmail.com</p>
-      <p>LinkedIn: Add your LinkedIn link here</p>
-      <p>GitHub: Add your GitHub link here</p>
+    <section class="section" id="cv">
+      <h2>CV</h2>
+      <p>CV coming soon.</p>
     </section>
 
-  </div>
+    <footer id="contact">
+      <a href="mailto:roshandhand@gmail.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
