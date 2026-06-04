@@ -60,10 +60,35 @@ body {
   color: var(--blue);
 }
 
+.side-menu a.active {
+  color: var(--blue);
+}
+
 .page {
   max-width: 920px;
   margin: 0 auto;
   padding: 80px 24px 40px;
+}
+
+.page-header {
+  padding: 35px 0 36px;
+}
+
+.page-header h1 {
+  color: var(--blue);
+  font-size: 56px;
+  font-weight: 750;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  margin: 0 0 16px;
+}
+
+.page-header p {
+  color: var(--gray);
+  font-size: 21px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 720px;
 }
 
 .intro {
@@ -72,20 +97,32 @@ body {
 }
 
 .intro h1 {
-  font-size: 56px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 64px;
   line-height: 1.05;
   letter-spacing: -2.5px;
   margin: 0 0 18px;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .intro-description {
   max-width: 720px;
-  margin: 0 auto 36px;
-  color: var(--gray);
+  margin: 0 auto 8px;
   font-size: 24px;
   line-height: 1.55;
   letter-spacing: -0.4px;
+}
+
+.intro-primary {
+  color: var(--text);
+}
+
+.intro-subtitle {
+  color: var(--gray);
+  font-size: 21px;
+  line-height: 1.5;
+  margin: 0 auto 36px;
+  max-width: 720px;
 }
 
 .profile-pic {
@@ -114,6 +151,12 @@ body {
   margin-bottom: 18px;
   box-shadow: 0 14px 35px rgba(36, 85, 166, 0.10);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile-link {
+  color: inherit;
+  display: block;
+  text-decoration: none;
 }
 
 .tile:hover {
@@ -178,6 +221,14 @@ footer {
 
   .recent h2 {
     font-size: 36px;
+  }
+
+  .page-header h1 {
+    font-size: 42px;
+  }
+
+  .page-header p {
+    font-size: 18px;
   }
 
   .tile h3 {
