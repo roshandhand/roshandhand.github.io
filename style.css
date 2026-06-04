@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Arial, sans-serif;
   background: var(--white);
   color: var(--text);
 }
@@ -31,15 +31,15 @@ body {
 .side-menu {
   position: fixed;
   top: 0;
-  left: -270px;
-  width: 225px;
+  left: -280px;
+  width: 230px;
   height: 100vh;
   background: var(--white);
   border-right: 1px solid rgba(36, 85, 166, 0.14);
-  padding: 95px 22px 22px;
+  padding: 95px 24px 24px;
   transition: left 0.3s ease;
   z-index: 1000;
-  box-shadow: 12px 0 35px rgba(36, 85, 166, 0.10);
+  box-shadow: 12px 0 35px rgba(36, 85, 166, 0.12);
 }
 
 .side-menu.open {
@@ -51,8 +51,9 @@ body {
   color: var(--text);
   text-decoration: none;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 650;
   margin-bottom: 24px;
+  letter-spacing: -0.3px;
 }
 
 .side-menu a:hover {
@@ -60,34 +61,36 @@ body {
 }
 
 .page {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 90px 24px 40px;
+  padding: 80px 24px 40px;
 }
 
 .intro {
   text-align: center;
-  padding: 45px 0 70px;
+  padding: 20px 0 70px;
 }
 
 .intro h1 {
-  font-size: 64px;
+  font-size: 56px;
   line-height: 1.05;
   letter-spacing: -2.5px;
   margin: 0 0 18px;
+  font-weight: 750;
 }
 
 .intro-description {
   max-width: 720px;
   margin: 0 auto 36px;
   color: var(--gray);
-  font-size: 19px;
-  line-height: 1.7;
+  font-size: 24px;
+  line-height: 1.55;
+  letter-spacing: -0.4px;
 }
 
 .profile-pic {
-  width: 270px;
-  height: 270px;
+  width: 310px;
+  height: 310px;
   object-fit: cover;
   border-radius: 34px;
   box-shadow: 0 24px 55px rgba(36, 85, 166, 0.18);
@@ -99,6 +102,7 @@ body {
   letter-spacing: -1.5px;
   margin: 0 0 26px;
   color: var(--blue);
+  font-weight: 750;
 }
 
 .tile {
@@ -119,14 +123,16 @@ body {
 
 .tile h3 {
   margin: 0 0 10px;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
   color: var(--text);
 }
 
 .tile p {
   color: var(--gray);
-  line-height: 1.7;
-  font-size: 17px;
+  line-height: 1.8;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -162,15 +168,23 @@ footer {
   }
 
   .intro-description {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .profile-pic {
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
   }
 
   .recent h2 {
     font-size: 36px;
+  }
+
+  .tile h3 {
+    font-size: 24px;
+  }
+
+  .tile p {
+    font-size: 16px;
   }
 }
