@@ -392,17 +392,21 @@ body {
 }
 
 footer {
+  box-sizing: border-box;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   margin-top: 90px;
   padding: 110px 0 72px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.82) 28%, rgba(255, 255, 255, 0.22) 62%, rgba(255, 255, 255, 0.10) 100%),
-    url("assets/tahoe-footer.jpg") center bottom / min(2400px, 100vw) auto no-repeat;
+    url("assets/tahoe-footer.jpg") center bottom / 100% auto no-repeat;
   display: flex;
   justify-content: center;
   gap: 18px;
   flex-wrap: wrap;
   overflow: hidden;
   position: relative;
+  width: 100vw;
 }
 
 .footer-button {
