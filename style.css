@@ -2,7 +2,7 @@
   --blue: #2455a6;
   --text: #222222;
   --gray: #6e6e73;
-  --background: #fafafa;
+  --background: #f7f7f7;
   --white: #ffffff;
 }
 
@@ -76,7 +76,6 @@ body {
   line-height: 1.05;
   letter-spacing: -2.5px;
   margin: 0 0 36px;
-  color: var(--text);
 }
 
 .profile-pic {
@@ -88,15 +87,14 @@ body {
   border: 1px solid rgba(36, 85, 166, 0.12);
 }
 
-.recent h2,
-.section h2 {
+.recent h2 {
   font-size: 50px;
   letter-spacing: -1.5px;
   margin: 0 0 26px;
   color: var(--blue);
 }
 
-.recent-panel {
+.tile {
   background: var(--white);
   border: 1px solid rgba(36, 85, 166, 0.12);
   border-left: 6px solid var(--blue);
@@ -104,32 +102,18 @@ body {
   padding: 30px;
   margin-bottom: 18px;
   box-shadow: 0 14px 35px rgba(36, 85, 166, 0.09);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.recent-panel:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 45px rgba(36, 85, 166, 0.14);
-}
-
-.recent-panel h3 {
+.tile h3 {
   margin: 0 0 10px;
   font-size: 25px;
-  color: var(--text);
 }
 
-.recent-panel p,
-.section p {
+.tile p {
   color: var(--gray);
   line-height: 1.7;
   font-size: 17px;
   margin: 0;
-}
-
-.section {
-  margin-top: 72px;
-  padding-top: 26px;
-  border-top: 1px solid rgba(36, 85, 166, 0.15);
 }
 
 footer {
@@ -149,26 +133,4 @@ footer a {
 
 footer a:hover {
   color: var(--blue);
-}
-
-@media (max-width: 700px) {
-  .intro h1 {
-    font-size: 42px;
-  }
-
-  .profile-pic {
-    width: 220px;
-    height: 220px;
-  }
-
-  .recent h2,
-  .section h2 {
-    font-size: 36px;
-  }
-
-  footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
 }
