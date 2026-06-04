@@ -2,14 +2,13 @@
   --blue: #2455a6;
   --text: #222222;
   --gray: #6e6e73;
-  --background: #f7f7f7;
   --white: #ffffff;
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--background);
+  background: var(--white);
   color: var(--text);
 }
 
@@ -20,7 +19,7 @@ body {
   z-index: 1001;
   background: var(--white);
   color: var(--blue);
-  border: 1px solid rgba(36, 85, 166, 0.25);
+  border: 1px solid rgba(36, 85, 166, 0.35);
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -75,7 +74,15 @@ body {
   font-size: 64px;
   line-height: 1.05;
   letter-spacing: -2.5px;
-  margin: 0 0 36px;
+  margin: 0 0 18px;
+}
+
+.intro-description {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  color: var(--gray);
+  font-size: 19px;
+  line-height: 1.7;
 }
 
 .profile-pic {
@@ -96,17 +103,24 @@ body {
 
 .tile {
   background: var(--white);
-  border: 1px solid rgba(36, 85, 166, 0.12);
+  border: 1px solid rgba(36, 85, 166, 0.18);
   border-left: 6px solid var(--blue);
   border-radius: 22px;
   padding: 30px;
   margin-bottom: 18px;
-  box-shadow: 0 14px 35px rgba(36, 85, 166, 0.09);
+  box-shadow: 0 14px 35px rgba(36, 85, 166, 0.10);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px rgba(36, 85, 166, 0.16);
 }
 
 .tile h3 {
   margin: 0 0 10px;
   font-size: 25px;
+  color: var(--text);
 }
 
 .tile p {
@@ -121,16 +135,42 @@ footer {
   padding: 42px 0;
   display: flex;
   justify-content: center;
-  gap: 34px;
-  border-top: 1px solid rgba(36, 85, 166, 0.15);
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
-footer a {
-  color: var(--text);
+.footer-button {
+  color: var(--blue);
+  background: var(--white);
+  border: 1px solid rgba(36, 85, 166, 0.25);
+  border-radius: 999px;
+  padding: 12px 22px;
   text-decoration: none;
   font-weight: 700;
+  box-shadow: 0 10px 25px rgba(36, 85, 166, 0.10);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-footer a:hover {
-  color: var(--blue);
+.footer-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(36, 85, 166, 0.16);
+}
+
+@media (max-width: 700px) {
+  .intro h1 {
+    font-size: 42px;
+  }
+
+  .intro-description {
+    font-size: 17px;
+  }
+
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+  }
+
+  .recent h2 {
+    font-size: 36px;
+  }
 }
